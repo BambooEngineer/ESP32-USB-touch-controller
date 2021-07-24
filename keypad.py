@@ -4,7 +4,7 @@ import pydirectinput
 import time
 Arduino_Serial = serial.Serial('COM5', 115200)
 Arduino_Serial.timeout = 0.01
-time.sleep(1) # pydirectinput is too slow, Serial is fine
+time.sleep(1) 
 
 while True:
     #Words = Arduino_Serial.read(Arduino_Serial.inWaiting() + 32)
